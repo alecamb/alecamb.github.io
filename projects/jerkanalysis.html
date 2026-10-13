@@ -24,21 +24,20 @@
       <h1>Motion / Jerk Analysis</h1>
     </header>
     <dl class="project-details">
-      <div><dt>Summary</dt><dd>Created a experimental design to analyze
-        jerk behavior in tennis rackets during a swing. The goal was to 
-        determine methods for reducing jerk experienced by the player during
-        competition.
+      <div><dt>Summary</dt><dd>Created an experimental design to analyze
+        analyze kinematic jerk in tennis rackets during swing impact, optimizing for grip techniques and strike placement to reduce physical strain on players.
       </dd></div>
-      <div><dt>Role</dt><dd>Team member, responsibilities split equally between two.</dd></div>
-      <div><dt>Challenges</dt><dd>Incoporating the accelerometers was the biggest challenge we expereinced.
-        We ran into multiple complications convertign the acclerometer date into
-        usable data, troubleshooting accelerometer placement and soldering connections, and creating
-        an intuitive data streaming pipeline. Once these were set up, using a preplanned DOE made
-        the exeperiment much easier to run and analyze.
+      <div><dt>Role</dt><dd>Co-Lead Engineer; Architected data acquisition pipeline and performed kinematic data analysis.</dd></div>
+      <div><dt>Challenges</dt><dd>Engineeered a custom data acquisition
+        pipeline using an Arduino Uno, MS Excel, and MPU6050 accelerometers.
+        Programmed C++ script to collect and convert data into terms of g and remove data clipping, then sent to Excel via Data Streamer.
+        Overcame hardware placement constraints by optimizing sensor placement at movement peaks and
+        soldering connections to accelerometers to improve data. Designed a Design of Experiments (DOE)
+        to systematically collect and evaluate results across 16 total experiments.
       </dd></div>
-      <div><dt>Results</dt><dd>The analysis revealed significant jerk peaks during impact scenarios.
-        The ending recommendation matched a lot of common wisdom on how to grip and hold a racket during
-        swinging, which validated our results.
+      <div><dt>Results</dt><dd>Processed data into multi-axis significance graphs. This determined two high-impact changes, one conventional and one not.
+        First, the lower grip decreased the deviation of jerk by about 30%, and, second, the unconventional change was cutting some of the strings of the racket,
+        which decreased the deviation of jerk by around 33%.
       </dd></div>
     </dl>
     <section class="project-media-section" aria-labelledby="project-media-title">
